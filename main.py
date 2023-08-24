@@ -10,7 +10,7 @@ origins = [
     "http://localhost",
     "http://127.0.0.1:5500",
     "http://127.0.0.1:5501"
-    "https://joelcori.github.io"
+    "https://joelcori.github.io/Pagina-de-Tienda-Online/inicio.html"
 ]
 
 app.add_middleware(
