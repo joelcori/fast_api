@@ -1,4 +1,4 @@
-# from fastapi.middleware.cors import CORSMiddleware
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from bot import msj_bienvenida, get_rpta
 
