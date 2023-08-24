@@ -4,22 +4,22 @@ from bot import msj_bienvenida, get_rpta
 
 app = FastAPI()
 
-# origins = [
-#     "http://localhost.tiangolo.com",
-#     "https://localhost.tiangolo.com",
-#     "http://localhost",
-#     "http://127.0.0.1:5500",
-#     "http://127.0.0.1:5501",
-#     "https://pagina-de-tienda-online.onrender.com/"
-# ]
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://127.0.0.1:5500",
+    "http://127.0.0.1:5501",
+    "https://pagina-de-tienda-online.onrender.com/"
+]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["*"],
-#     allow_headers=["*"],
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/")
